@@ -1,0 +1,26 @@
+* {
+  margin:0px;
+  padding: 0px;
+}
+
+.body {
+  background-color:white;
+  max-width: 370px;
+  max-height: 547px;
+  border-radius: 1px solid black;
+}
+
+h1 {
+  color:#407BFF;
+  opacity: 0.9;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.email label {
+  font-size: 16px;
+}
+
+.email input {
+  border-radius: 1px solid #DEE0E0;
+}

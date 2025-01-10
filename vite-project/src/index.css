@@ -1,0 +1,14 @@
+
+body {
+  margin:0px;
+  padding: 0px;
+  background-color:#EFEFEF;
+}
+
+h1, h2 {
+  color:blueviolet;
+}
+
+p {
+  color:rgb(187, 58, 226);
+}
