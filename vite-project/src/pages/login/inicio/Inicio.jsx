@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Inicio.module.css';
-import { FaFacebook, FaGoogle, FaApple } from 'react-icons/fa';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -69,13 +68,13 @@ const Login = () => {
         </div>
         <div className={styles.socialButtons}>
           <button className={styles.facebook}>
-            <FaFacebook />
+          <i class="fa-brands fa-facebook"></i>
           </button>
           <button className={styles.google}>
-            <FaGoogle />
+          <i class="fa-brands fa-google"></i>
           </button>
           <button className={styles.apple}>
-            <FaApple />
+          <i class="fa-brands fa-apple"></i>
           </button>
         </div>
         <p className={styles.terms}>
