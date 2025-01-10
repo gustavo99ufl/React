@@ -1,26 +1,185 @@
-* {
-  margin:0px;
-  padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
 }
 
-.body {
-  background-color:white;
+.loginContainer {
+  width: 100%;
   max-width: 370px;
-  max-height: 547px;
-  border-radius: 1px solid black;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1 {
-  color:#407BFF;
-  opacity: 0.9;
+.topSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-top: 28.8px;
+  max-width: 180px;
+  pointer-events: none;
+}
+
+.bottomSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #407bff;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 600;
+  margin-bottom: 28px;
 }
 
-.email label {
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inputGroup label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.input {
+  width: 348px;
+  padding: 10px;
+  border: 1px solid #dee0e0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input::placeholder {
   font-size: 16px;
 }
 
-.email input {
-  border-radius: 1px solid #DEE0E0;
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.loginButton {
+  width: 100%;
+  height: 49px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #016cdf;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.line {
+  flex-grow: 1;
+  border: 0;
+  border-top: 1px solid #dee0e0;
+}
+
+.text {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.facebook, .google, .apple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.facebook {
+  background-color: #1877F2;
+  color: white;
+}
+
+.google {
+  background-color: white;
+  color: #202124;
+  border: 1px solid #dadce0;
+}
+
+.apple {
+  background-color: black;
+  color: white;
+}
+
+.facebook:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.google:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.apple:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.terms, .terms > a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 12px;
 }
